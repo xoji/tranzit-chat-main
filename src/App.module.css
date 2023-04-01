@@ -1,0 +1,65 @@
+.chat-content {
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+
+.chat-head {
+    padding: 24px 30px;
+    text-align: center;
+    border-bottom: 1px solid #E4ECFD;
+}
+
+.chat-txt {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.0425em;
+    color: #1D1E21;
+}
+
+.chat-link {
+    display: flex;
+    padding: 20px 24px;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+}
+
+.chat-link::after {
+    content: "";
+    background-image: url("/src/images/chevron-right-light.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 8px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+}
+
+.chat-info {
+    margin-left: 20px;
+}
+
+.chat-user-name {
+    display: block;
+    margin-bottom: 11px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.0425em;
+    color: #1D1E21;
+}
+
+.chat-message-notification {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.0425em;
+    color: rgba(29, 30, 33, 0.7);
+}
+
+.chat-item:not(:last-child) {
+    border-bottom: 1px solid #E4ECFD;
+}
